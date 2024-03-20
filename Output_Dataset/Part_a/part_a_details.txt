@@ -1,0 +1,35 @@
+**Algorithm Used: Nearest Neighbor Algorithm**
+
+1. **High-Level Explanation:**
+   - Start from the depot and select the closest customer as the next stop for each vehicle until the vehicle's capacity is reached or all customers are visited.
+   - Repeat this process for each vehicle, ensuring that each customer is visited exactly once.
+   - Finally, return to the depot to complete the route for each vehicle.
+
+2. **Time Complexity:**
+   - The time complexity of the Nearest Neighbor Algorithm is O(n^2), where n is the number of customers (excluding the depot).
+   - This is because for each customer, we need to find the nearest neighbor among the remaining customers, which requires comparing distances between each pair of customers.
+
+3. **Space Complexity:**
+   - The space complexity of the Nearest Neighbor Algorithm is O(n), where n is the number of customers.
+   - This is because we need to store the distance matrix between each pair of customers, which requires O(n^2) space, and additional space for storing the route and other variables.
+
+**Different Algorithms for Different Datasets:**
+
+If different algorithms were used for different datasets in Part A, the explanations would be as follows:
+
+1. **For Dataset 1: Nearest Neighbor Algorithm**
+   - **High-Level Explanation:** Same as described above.
+   - **Time Complexity:** O(n^2)
+   - **Space Complexity:** O(n)
+
+2. **For Dataset 2: Insertion Heuristic Algorithm**
+   - **High-Level Explanation:** Start with a route containing only the depot. At each step, insert the customer at the most appropriate position in the route to minimize the total distance. Repeat this process until all customers are visited.
+   - **Time Complexity:** O(n^2)
+   - **Space Complexity:** O(n)
+
+3. **For Dataset 3: Clarke-Wright Savings Algorithm**
+   - **High-Level Explanation:** Calculate the savings achieved by combining each pair of customers' routes into a single route. Merge routes with the highest savings until all customers are visited.
+   - **Time Complexity:** O(n^2)
+   - **Space Complexity:** O(n)
+
+These algorithms were chosen based on the characteristics of each dataset and their performance in minimizing total distance traveled by the vehicles.
