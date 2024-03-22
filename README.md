@@ -1,3 +1,5 @@
+<h1>Walmart-sct-hackathon-round_1</h1>
+<h2>Part-1</h2>
 **Algorithm Used: Nearest Neighbor Algorithm**
 
 1. **High-Level Explanation:**
@@ -34,7 +36,7 @@ If different algorithms were used for different datasets in Part A, the explanat
 
 These algorithms were chosen based on the characteristics of each dataset and their performance in minimizing total distance traveled by the vehicles.
 
-*Part-2*
+<h2>Part-2</h2>
 
 Algorithm Used: Nearest Neighbor Algorithm
 Time Complexity: O(n^2)
